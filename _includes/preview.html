@@ -2,19 +2,7 @@
     {% cycle 'add row' : '<div class="row">', nil, nil %}
         <div class="col-sm-4">
             <div class="preview-panel">
-			<a class="product" href="{{ site.baseurl }}{{ product.url }}">
-				<img src="{{ product.image }}" alt="{{ product.name }}" class="thumbnail" style="height:200px"/>
-				<p>{{ product.name }}</p>
-			</a>
-
-		    <center><button class="snipcart-add-item"
-		      data-item-name="{{ product.name }}"
-		      data-item-id="{{ product.sku }}"
-		      data-item-image="{{ product.image }}"
-		      data-item-url="{{ site.baseurl }}"
-		      data-item-price="{{ product.price }}">
-		      Buy it for {{ product.price }} $
-		    </button></center>
+			{% include product.html %}
            </div>
         </div>
 {% cycle 'end row' : nil, nil, '</div>' %}
