@@ -44,6 +44,11 @@ dl, dd, ol, ul, figure {
   align-items: center;
 }
 
+@media screen and (max-width: 640px) {
+  .product-details{
+    display: table;
+  }
+}
 .products{
   display: flex;
   flex-direction: row;
