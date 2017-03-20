@@ -1,7 +1,38 @@
 ---
-layout: products
-title: Store
+layout: default
 ---
-{% for product in site.products %}
-  {% include product.html %}
-{% endfor %}
+
+
+
+
+<div class="home">
+
+
+  <div class="slider">
+  
+    <div><center><img src="http://www.designpointfurniture.com/wp-content/uploads/2016/02/scented-candles-7.jpg" style="max-height: 500px"/></center></div>
+    <div><center><img src="http://thehomemadeexperiment.cdn.kinsta.com/wp-content/uploads/2014/02/homemade-scented-votive-candles-button.jpg" style="max-height: 500px"/></center></div>
+    <div><center><img src="https://s-media-cache-ak0.pinimg.com/originals/7a/a9/d4/7aa9d4f2f4debf37c32e384fe611b491.jpg" style="max-height: 500px"/></center></div>
+
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+          dots: true,
+          arrows: true,
+  		  infinite: true,
+ 		  speed: 500,
+ 		  fade: true,
+ 	      cssEase: 'linear'
+      });
+    });
+  </script>
+
+  {% include preview.html %}
+
+</div>

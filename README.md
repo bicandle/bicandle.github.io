@@ -1,9 +1,5 @@
-# Static site e-commerce with Snipcart & Jekyll
+# urban-theme
 
-Demo code for an e-commerce static site with Snipcart & Jekyll.
+This theme is a Jekyll port of http://erosie.net/ with some modifications. It is designed for visual artists.
 
-> [Read the full blog post](https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll)
-
-> [Check out the live demo site](http://snipcart.github.io/snipcart-jekyll-integration/)
-
-Enjoy folks!
+Live-Demo: http://narkotyk.net/
