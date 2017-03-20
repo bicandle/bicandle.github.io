@@ -3,7 +3,7 @@ title: BICandle
 email: info@bicandle.com
 description: Frontend Test
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://chambermaid-pitches.netlify.com/" # the base hostname & protocol for your site
 twitter_username: bicandle
 api_key: ODVmODk0NDItNGJjZi00MGVhLTgzYzAtNDg2OWU5N2NmMmQ3NjM2MjUxNTUzNjAzNjUxNDIw
 
