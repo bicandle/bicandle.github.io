@@ -30,7 +30,8 @@ dl, dd, ol, ul, figure {
 }
 
 .product-description{
-  width: 400px;
+  width: 100%;
+  max-width: 600px;
   padding: 25px;
   margin: 25px;
   background-color: #CFD8DC;

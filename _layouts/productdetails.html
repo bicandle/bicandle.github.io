@@ -3,22 +3,59 @@ layout: default
 head:
   snipcart.html
 ---
+<div class="product-slider">
+    {% for image in page.images %}
+    <div><center><img src="{{ image }}" style="max-height: 500px"/></center></div>
+    {% endfor %}
+  </div>
+
 <div class="product-details">
-  <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
+  
+  
+  
   <div class="product-description">
     <p>{{ page.name }}</p>
-
+    <p>${{ page.price }}</p>
     <p>
       {{ page.content }}
     </p>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/slick/slick.min.js"></script>
     <button class="snipcart-add-item"
       data-item-name="{{ page.name }}"
       data-item-id="{{ page.sku }}"
       data-item-image="{{ page.image }}"
       data-item-url="{{ site.baseurl }}{{ page.url }}"
       data-item-price="{{ page.price }}">
-      Buy it for ${{ page.price }}
+      Add to cart
     </button>
+
+
+
   </div>
 </div>
+<script>
+      $(document).mouseup(function (e) {
+         var popup = $(".snip-layout__main-container");
+         if (!popup.is(e.target) && popup.has(e.target).length == 0) {
+             $('#snipcart-close').trigger('click');
+         }
+      });
+
+  
+  </script>
+      <script type="text/javascript">
+    $(document).ready(function(){
+      $('.product-slider').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3500
+      });
+    });
+  </script>

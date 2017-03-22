@@ -1,7 +1,7 @@
 # Site settings
 title: BICandle
 email: info@bicandle.com
-description: Frontend Test
+description: STAGING VERSION ONLY/Change api_key to go live.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://chambermaid-pitches.netlify.com/" # the base hostname & protocol for your site
 twitter_username: bicandle
